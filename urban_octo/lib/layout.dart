@@ -38,7 +38,14 @@ class _LayoutWidgetState extends State<LayoutWidget> {
                 child: Expanded(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [Text("Peter Bishop | Software Engineer")],
+                    children: [
+                      Padding(
+                        padding: EdgeInsets.all(8),
+                        child: Text("Peter Bishop | Software Engineer"),
+                      ),
+                      Text("data driven results"),
+                      Expanded(child: SizedBox(width: width)),
+                    ],
                   ),
                 ),
               ),
